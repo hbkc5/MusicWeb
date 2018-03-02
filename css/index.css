@@ -1,0 +1,90 @@
+body, div, img, ul, li {
+	margin: 0px;
+	padding: 0px;
+}
+
+#body{
+    background-image: url(../images/home.jpg);
+    background-size: cover;
+    height: 900px;
+    background-position: center;
+}
+
+#smallTitle{
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    font-size: 0.9em;
+    letter-spacing: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#title{
+    /* display: none; */
+    width: 600px;
+    font-size: 3.3em;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    color:#fff;
+    text-shadow: 2px 2px 2px #212121;
+    font-weight: 700;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.MusicList{
+    width: 30%;
+    height: 100%;
+    background: rgba(6, 6, 6, 0.85);
+    position: fixed;
+    left: 70%;
+    -webkit-transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+    overflow: auto;
+}
+
+#list{
+    font-size: 18px;
+    color: rgba(225,225,225,.8);
+    line-height: 50px;
+}
+
+#list li{
+    cursor: pointer;
+}
+
+.playing{
+    list-style-image: url(../images/wave.gif);
+    color: rgb(250, 197, 213);
+}
+
+.MusicList.open{
+    -webkit-transform: translateX(0%);
+    -webkit-transition: -webkit-transform 0.5s;
+}
+
+#Musicbutton{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 8%;
+    left: 6%;
+    background: rgba(0, 0, 0, 0.66);
+    cursor: pointer;
+}
+
+#Musicbutton img{
+    width: 30px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+audio{
+    position: fixed;
+    top: 92%;
+    left: 18%;
+    width: 50%;
+}

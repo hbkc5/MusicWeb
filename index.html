@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Easy</title>
+    <link href="./css/index.css" type="text/css" rel="stylesheet" />
+    <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="./js/index1.js" type="text/javascript"></script>
+    <script src="./js/jquery.transit.js" type="text/javascript"></script>
+    <script src="./js/jquery.textFx.js" type="text/javascript"></script>
+    
+    <!-- <script src="./js/index.js" type="text/javascript"></script> -->
+</head>
+
+
+<body>
+    <!-- <script type="text/javascript">
+        window.onload = function(){
+            $('#title').fadeIn(3000);
+        };
+
+        function toggle(){
+            $(".MusicList").toggleClass("open");
+        } 
+    </script> -->
+    <div id="body">
+        <!-- <input type="file" id="file" multiple="multiple"/>
+        <br>
+        <input type="button" onclick="Upload()" value="上传"/>
+        <br> -->
+        <!-- <audio src="http://222.198.39.16:8080/SpringMVCDemo2/music/1.mp3" controls="controls"></audio>
+        <br>
+        <ul id='musicList'></ul> -->
+        <p id="smallTitle">Sounds made by voices </p>
+        <h3 id="title">The Sweetest music this side of heaven.</h3>
+        <div class="MusicList">
+            <ol id="list">
+
+            </ol>
+        </div>
+        <div id="Musicbutton" onclick="toggle()">
+            <img src="./images/list.png" />
+        </div>
+        
+        <audio controls='controls' autoplay='autoplay'></audio>
+    </div>
+</body>
+</html>
